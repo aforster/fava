@@ -56,7 +56,7 @@ def _add_env_filenames(filenames: tuple[str, ...]) -> tuple[str, ...]:
 @click.argument(
     "filenames",
     nargs=-1,
-    type=click.Path(exists=True, dir_okay=False, resolve_path=True),
+    type=click.Path(),
 )
 @click.option(
     "-p",
